@@ -1,0 +1,415 @@
+
+/*GENERAL SELECTOR 
+---------------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body{
+    background-color: rgba(2, 0, 0, 0.699);
+    margin: 0 5%;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* HEADER AND FOOTER
+-------------------------------------------------- */
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+
+nav{
+    width: 12%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 25px; 
+    justify-content: space-around;
+}
+
+
+.social{
+    color: white;
+}
+
+.social:hover{
+    color: slategray;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px rgba(252, 250, 250, 0.973);
+}
+
+footer nav{
+    margin-right: 70px;
+}
+
+/*INTRO 
+---------------------------------------- */
+.intro{
+    display: flex;
+    align-items: center;
+    height: 90vh; 
+    color: white;
+    position: relative;
+    
+}
+
+.myDetails h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.myStatus{
+    border-bottom: 5px solid black;
+    
+}
+
+.myDetails p{
+    font-size: 1rem;
+    width: 60%;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.myDetails a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid black;
+    padding: 15px 10px;
+    border-radius: 5px; 
+    text-align: center;
+    margin-top: 70px;
+}
+
+.myDetails a:hover{
+    box-shadow: 0px 4px 1px 0px rgb(0, 0, 0);
+}
+
+
+.intro img{
+    width: 30rem;
+    height: 32rem;
+    right: 0;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+/*TOOLS
+----------------------------------------------*/
+
+.tools{
+    margin: 30px 0;
+    height: 50vh;
+}
+
+
+
+.listedTools{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+    grid-area: 20px;
+    gap: 30px;
+}
+
+.tools p{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tools div small{
+    color: rgba(218, 201, 201, 0.767);
+    font-size: 1rem;
+}
+
+
+/*PROJECTS
+--------------------------------------*/
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 35px;
+
+}
+
+.title a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid black;
+    border-radius: 5px; 
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.title a:hover{
+    box-shadow: 0px 4px 1px 0px rgb(0, 0, 0);
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-area: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.projects a div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.projects a{
+    text-decoration: none;
+}
+
+.projects a div:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+    padding: 40px;
+}
+
+.projects div p{
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: rgba(2, 0, 0, 0.397);
+
+}
+
+.projects div small{
+    color: rgba(2, 0, 0, 0.397);
+    word-spacing: 14px;
+    margin-top: 5px;
+}
+
+.projects div img{
+    max-width: 20rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0 10px;
+}
+
+.seeMore{
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px; 
+    text-align: center;
+    padding: 10px 10px;
+    
+    
+}
+
+.seeMore:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+/* CONTACT FORM 
+------------------------------------------------- */
+.contactForm{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details{
+    line-height: 30px;
+}
+
+
+.details p{
+    color: white;
+}
+
+form{
+    display: inline-block;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 0.5px solid black;
+    width: 45%;
+    outline: 0;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+textarea{
+    font-size: 20px;
+    width: 90%;
+    height: 120px;
+    border: 0;
+    border-bottom: 0.5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 300;
+    outline: 0;
+    resize: none;
+    background-color: transparent;
+    color: white;
+}
+
+.contactForm button{
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 400;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px; 
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contactForm button:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.contactForm h2{
+    text-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*TOGGLE BUTTON 
+----------------------------------------------------- */
+.toggle{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 5%;
+    bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    /* background-color: rgb(30, 48, 80); */
+    background-color: yellow;
+    
+    
+}
+
+/*TOGGLED WEBSITE
+----------------------------------------------------*/
+.toggledsocial{
+    color: black;
+}
+
+.toggledsocial:hover{
+    color: slategray;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0, 1);
+}
+
+.toggledtext{
+    color: black;
+}
+
+/*RESPONSIVENESS 
+----------------------------------------*/
+@media only screen and (max-width: 858px){
+    .contactForm{
+      flex-direction: column;
+      gap: 70px;
+      
+    }
+    .details p{
+        font-size: 20px;
+    }
+    .form{
+        width: 100%;
+    }
+    form{
+        width: 80%;
+        
+    }
+    .contactForm input{
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contactForm button{
+        margin: 0 auto;
+    }
+    nav{
+        width: 30%;
+        font-size: 30px;
+
+    }
+    .tools{
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 754px){
+    header{
+        margin-bottom: 30px;
+    }
+    .intro img{
+        width: 15rem;
+        
+    }
+
+}
+@media screen and (max-width: 478px) {
+    header a img{
+        width: 170px;
+    }
+    .tools{
+        height: 30vh;
+    }
+    .tools p{
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .title a{
+        font-size: 10px;
+    }
+}
