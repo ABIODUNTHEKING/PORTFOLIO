@@ -111,6 +111,7 @@ footer nav{
     width: 50rem;
     height: 32rem;
     border-radius: 50%;
+   
 
 }
 
@@ -142,6 +143,8 @@ footer nav{
 .tools div small{
     color: rgba(218, 201, 201, 0.767);
     font-size: 1rem;
+    transition: 0.5s;
+    
 }
 
 
@@ -370,6 +373,13 @@ textarea{
 
 .toggledIntro{
     color: rgba(2, 0, 0, 0.637);
+}
+
+.toggledIntro h1 .myStatus{
+    color: rgb(30, 48, 80);
+}
+.toggledIntro h1 .myStatus{
+    border-bottom: 4px solid rgba(123, 145, 204, 0.623);
 }
 
 .toggledIntro a{
