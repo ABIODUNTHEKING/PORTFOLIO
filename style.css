@@ -461,12 +461,22 @@ textarea{
     header{
         margin-bottom: 30px;
     }
+    .intro{
+        height: 90vh;
+    }
     .intro img{
         width: 15rem;
         
     }
 
 }
+
+@media screen and (max-width: 500px){
+    .intro{
+        height: 75vh;
+    }
+}
+
 @media screen and (max-width: 478px) {
     header a img{
         width: 170px;
