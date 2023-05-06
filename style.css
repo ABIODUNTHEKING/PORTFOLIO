@@ -12,7 +12,6 @@
 body{
     background-color: rgba(2, 0, 0, 0.699);
     margin: 0 5%;
-    overflow: hidden;
 }
 
 h2{
@@ -272,11 +271,11 @@ form input{
     display: inline-block;
     background-color: transparent;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 textarea{
-    font-size: 15px;
+    font-size: 20px;
     width: 90%;
     height: 120px;
     border: 0;
@@ -396,7 +395,7 @@ textarea{
     }
     .intro img{
         width: 15rem;
-        margin-left: -30px;
+        
     }
 
 }
