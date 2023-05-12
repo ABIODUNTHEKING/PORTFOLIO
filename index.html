@@ -1,159 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap'" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap'"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Emmanuel</title>
-    
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <header>
-        <a href="#"><img src="/image/white logo.svg" alt="LOGO" id="logo"></a>
-        <nav id="navBar">
-            <ul>
-                <li><a href="https://github.com/ABIODUNTHEKING" aria-label="github" class="social" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <li><a href="https://twitter.com/ABIODUNTHEKING" aria-label="twitter" class="social" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/emmanuel-akinjogunla-b9607323a/" aria-label="linkedIn" class="social" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
+      <a href="#"><img src="/image/white logo.svg" alt="LOGO" id="logo" /></a>
+      <nav id="navBar">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/ABIODUNTHEKING"
+              aria-label="github"
+              class="social"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/ABIODUNTHEKING"
+              aria-label="twitter"
+              class="social"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/emmanuel-akinjogunla-b9607323a/"
+              aria-label="linkedIn"
+              class="social"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <section class="intro" id="intro">
+        <div class="myDetails">
+          <h1>Nice to meet you!</h1>
+          <h1 class="myName" id="myName">
+            I'm
+            <span class="myStatus" id="myStatus"
+              >Emmanuel Abiodun Akinjogunla.</span
+            >
+          </h1>
+          <p>
+            Based in Nigeria. I'm a front-end developer passionate about
+            building accessible and problem solving websites that users love
+          </p>
+          <a href="#contactForm">CONTACT ME</a>
+        </div>
+        <img
+          src="/image/ME.png"
+          alt="EMMANUEL ABIODUN AKINJOGUNLA"
+          class="myPic"
+        />
+        <button class="toggle" id="toggle">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+      </section>
+      <hr />
 
-        <section class="intro" id="intro">
-            <div class="myDetails">
-                <h1>Nice to meet you!</h1>
-                <h1 class="myName" id="myName">I'm <span class="myStatus" id="myStatus">Emmanuel Abiodun Akinjogunla.</span></h1>
-                <p>Based in the Nigeria. I'm a front-end developer passionate about building accessible and problem solving websites that users love</p>
-                <a href="#contactForm">CONTACT ME</a>
+      <section class="tools" id="tools">
+        <h2>TOOLS</h2>
+        <div class="listedTools" id="listedTools">
+          <div class="toolOne">
+            <i class="fab fa-html5" style="color: #f06529"></i>
+            <div>
+              <p>HTML</p>
+              <small class="html" id="html">1 year experience</small>
             </div>
-            <img src="/image/ME.png" alt="EMMANUEL ABIODUN AKINJOGUNLA" class="myPic"> 
-            <button class="toggle" id="toggle"><i class="fa-regular fa-sun"></i></button>
-        </section>
-        <hr>
-
-        
-        <section class="tools" id="tools">
-            <h2>TOOLS</h2>
-            <div class="listedTools" id="listedTools">
-                <div>
-                    <p>HTML</p>
-                    <small class="html" id="html">1 year experience</small>
-                </div>
-                <div>
-                    <p>CSS</p>
-                    <small id="css">1 year experience</small>
-                </div>
-                <div>
-                    <p>JAVASCRIPT</p>
-                    <small id="js">4 months experience</small>
-                </div>
-                <div>
-                    <p>BOOTSTRAP</p>
-                    <small id="bootstrap">1 month experience</small>
-                </div>
+          </div>
+          <div class="toolTwo">
+            <i class="fa-brands fa-css3-alt" style="color: #2965f1"></i>
+            <div>
+              <p>CSS</p>
+              <small id="css">1 year experience</small>
             </div>
-
-        </section>
-
-
-        <section>
+          </div>
+          <div class="toolThree">
+            <i class="fa-brands fa-js" style="color: #f0db4f"></i>
+            <div>
+              <p>JAVASCRIPT</p>
+              <small id="js">4 months experience</small>
+              
+            </div>
+          </div>
+          <div class="toolFour">
+            <i class="fa-brands fa-bootstrap" style="color: #563d7c;"></i>
             
-            <div class="title" id="title">
-                <h2>Projects</h2>
-                <a href="#contactForm">CONTACT ME</a>
+            <div class="bootstrap">
+              <p>BOOTSTRAP</p>
+              <small id="bootstrap">1 month experience</small>
+              <p class="circle"></p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="projects" id="projects">
-                
-                <a href="https://eaa-character-counter.netlify.app/" target="_blank">
-                    <div>
-                        <img src="/image/CHARACTER COUNTER.png" alt="CHARACTER COUNTER">
-                        <p>CHARACTER COUNTER</p>
-                        <small>HTML | CSS | JS</small>
-                    </div>
-                </a>
+      <section>
+        <div class="title" id="title">
+          <h2>Projects</h2>
+          <a href="#contactForm">CONTACT ME</a>
+        </div>
 
-                <a href="https://eaa-digital-clock.netlify.app/" target="_blank">
-                    <div>
-                        <img src="/image/DIGITAL TME.png" alt="DIGITAL TIME">
-                        <p>DIGITAL TIME</p>
-                        <small>HTML | CSS | JS</small>
-                    </div>
-                </a>
-
-                <a href="https://eaa-fylo.netlify.app/" target="_blank">
-                    <div>
-                        <img src="/image/FYLO.png" alt="FYLO LANDING PAGE">
-                        <p>FYLO LANDING PAGE</p>
-                        <small>HTML | CSS | JS</small>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div>
-                        <img src="/image/TRAVELING BUDDY.png" alt="TRAVELING BUDDY">
-                        <p>TRAVELING BUDDY</p>
-                        <small>HTML | CSS | BOOTSTRAP</small>
-                    </div>
-                </a>
-
-                <a href="">
-                    <div>
-                        <img src="/image/SIGN UP FORM.png" alt="SIGN UP FORM">
-                        <p>SIGN UP FORM</p>
-                        <small>HTML | CSS | BOOTSTRAP</small>
-                    </div>
-                </a>
-
-                <a href="https://eaa-calculation-game.netlify.app/" target="_blank">
-                    <div>               
-                        <img src="/image/CALCULATION GAME.png" alt="CALCULATION GAME">
-                        <p>CALCULATION GAME</p>
-                        <small>HTML | CSS | JS</small>
-                    </div>
-                </a>  
-
+        <div class="projects" id="projects">
+          <a href="https://eaa-character-counter.netlify.app/" target="_blank">
+            <div class="porjectOne">
+              <img src="/image/CHARACTER COUNTER.png" alt="CHARACTER COUNTER" />
+              <p>CHARACTER COUNTER</p>
+              <small>HTML | CSS | JS</small>
             </div>
+          </a>
 
-            <a href="" class="seeMore" id="seeMore">SEE MORE</a>
-        </section>
-
-        <section id="contactForm" class="contactForm">
-            <div class="details">
-                <h2>Contact Me</h2>
-                <h3>Get In Touch With Me</h3>
-                <p>I am currently available to assist you. Please feel free to use this form or email me about your project! and I will get back to you as soon as possible</p>     
+          <a href="https://eaa-digital-clock.netlify.app/" target="_blank">
+            <div class="porjectTwo">
+              <img src="/image/DIGITAL TME.png" alt="DIGITAL TIME" />
+              <p>DIGITAL TIME</p>
+              <small>HTML | CSS | JS</small>
             </div>
+          </a>
 
-            <div class="form" >
-                <form method="POST" data-netlify="true">
-                    <input type="text" id="name" placeholder="Enter Name" name="name"> 
-                    <input type="email" id="email" placeholder="Enter Email" name="email"> 
-                    <textarea  id="message" placeholder="Enter Message" rows="3" name="message"></textarea>
-                    <button type="submit" id="submit" onclick="sendEmail()"> Send To Me </button>
-                </form>
+          <a href="https://eaa-fylo.netlify.app/" target="_blank">
+            <div class="porjectThree">
+              <img src="/image/FYLO.png" alt="FYLO LANDING PAGE" />
+              <p>FYLO LANDING PAGE</p>
+              <small>HTML | CSS | JS</small>
             </div>
-        </section>
+          </a>
+
+          <a href="">
+            <div class="porjectFour">
+              <img src="/image/TRAVELING BUDDY.png" alt="TRAVELING BUDDY" />
+              <p>TRAVELING BUDDY</p>
+              <small>HTML | CSS | BOOTSTRAP</small>
+            </div>
+          </a>
+
+          <a href="">
+            <div class="porjectFive">
+              <img src="/image/SIGN UP FORM.png" alt="SIGN UP FORM" />
+              <p>SIGN UP FORM</p>
+              <small>HTML | CSS | BOOTSTRAP</small>
+            </div>
+          </a>
+
+          <a href="https://eaa-calculation-game.netlify.app/" target="_blank">
+            <div class="porjectSix">
+              <img src="/image/CALCULATION GAME.png" alt="CALCULATION GAME" />
+              <p>CALCULATION GAME</p>
+              <small>HTML | CSS | JS</small>
+            </div>
+          </a>
+        </div>
+
+        <a href="" class="seeMore" id="seeMore">SEE MORE</a>
+      </section>
+
+      <section id="contactForm" class="contactForm">
+        <div class="details">
+          <h2>Get In Touch With Me</h2>
+          <p>
+            I am currently available to assist you. Please feel free to use this
+            form or email me about your project. I will get back to you as soon
+            as possible
+          </p>
+        </div>
+
+        <div class="form">
+          <form method="POST" data-netlify="true">
+            <input type="text" id="name" placeholder="Enter Name" name="name" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Email"
+              name="email"
+            />
+            <textarea
+              id="message"
+              placeholder="Enter Message"
+              rows="3"
+              name="message"
+            ></textarea>
+            <button type="submit" id="submit" onclick="sendEmail()">
+              Send To Me
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <hr>
+    <hr />
     <footer class="contact">
-        <a href="#"><img src="" alt=""></a>
-        <nav id="navBarTwo">
-            <ul>
-                <li><a href="#" aria-label="github" class="social" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <li><a href="https://twitter.com/ABIODUNTHEKING" aria-label="twitter" class="social" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" aria-label="linkedIn" class="social" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-        </nav>
+      <a href="#"><img src="" alt="" /></a>
+      <nav id="navBarTwo">
+        <ul>
+          <li>
+            <a href="#" aria-label="github" class="social" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/ABIODUNTHEKING"
+              aria-label="twitter"
+              class="social"
+              target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" aria-label="linkedIn" class="social" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
