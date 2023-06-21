@@ -1,3 +1,4 @@
+//VARIABLES
 let toggleButton = document.getElementById('toggle')
 let body = document.getElementById('body')
 let logo = document.getElementById('logo')
@@ -15,8 +16,11 @@ let projects = document.getElementById('projects')
 let contactForm = document.getElementById('contactForm')
 let seeMoreButton = document.getElementById('seeMore')
 let mode = localStorage.getItem('mode') 
+
+
+
+//TOGGLE
 changeAppMode(mode)
-          
 function changeAppMode(mode){
     let backgroundColor
     if(mode == 'dark'){
@@ -66,7 +70,7 @@ toggleButton.addEventListener("click", ()=>{
    
 })
 
-
+//ANIMATION ON SLIDE
 window.addEventListener("scroll", ()=>{
     if(window.scrollY > intro.offsetHeight - intro.offsetTop){
         htmlExperience.innerText = `1 year experience`
