@@ -1,475 +1,381 @@
-
 /*GENERAL SELECTOR 
 ---------------------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
-
-body{
-    background-color: rgba(2, 0, 0, 0.699);
-    margin: 0 5%;
-   
+html {
+  scroll-behavior: smooth;
 }
 
-h2{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: white;
-    text-transform: uppercase;
+body {
+  background-color: rgba(2, 0, 0, 0.699);
+  margin: 0 5%;
 }
 
-hr{
-    margin-top: 10px;
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+hr {
+  margin-top: 10px;
 }
 
 /* HEADER AND FOOTER
 -------------------------------------------------- */
 
-header, footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5vh;
-    margin: 10px;
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  margin: 10px;
 }
 
-
-nav{
-    width: 12%;
+nav {
+  width: 12%;
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    font-size: 25px; 
-    justify-content: space-around;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 25px;
+  justify-content: space-around;
 }
 
-
-.social{
-    color: white;
+.social {
+  color: white;
 }
 
-.social:hover{
-    color: slategray;
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px rgba(252, 250, 250, 0.973);
+.social:hover {
+  color: rgba(255, 255, 255, 0.493);
 }
 
-footer nav{
-    margin-right: 50px;
+footer nav {
+  margin-right: 50px;
 }
 
 /*INTRO 
 ---------------------------------------- */
-.intro{
-    display: flex;
-    align-items: center;
-    height: 80vh; 
-    color: white;
-    position: relative;
-    overflow: hidden;
-    margin: 0 100px; 
-    
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 10vh 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin: 0 50px;
 }
 
-.myDetails h1{
-    font-size: 2rem;
-    margin-bottom: 20px;
+.myDetails h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-.myStatus{
-    border-bottom: 5px solid black;
-    
+.myStatus {
+  border-bottom: 5px solid black;
 }
 
-.myDetails p{
-    font-size: 1rem;
-    width: 60%;
-    word-spacing: 2px;
-    letter-spacing: 2px;
+.myDetails p {
+  font-size: 1rem;
+  width: 80%;
+  text-align: justify;
+  word-spacing: 2px;
+  letter-spacing: 2px;
 }
 
-.myDetails a{
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgba(107, 97, 97, 0.514);
-    color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
-    border: 2px solid rgba(123, 145, 204, 0.623);
-    padding: 15px 10px;
-    border-radius: 5px; 
-    border: 3.5px solid rgb(30, 48, 80);
-    text-align: center;
-    margin-top: 70px;
-    transition: 0.1ms;
-    
-    
+.myDetails a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  /* box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5); */
+  border: 1px solid white;
+  padding: 15px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 70px;
+  transition: 0.1ms;
 }
 
-.myDetails a:hover{
-    box-shadow: 3px 3px 3px 3px rgba(2, 0, 0, 0.699);
+.myDetails a:hover {
+  box-shadow: 3px 3px 3px 3px rgba(2, 0, 0, 0.699);
 }
 
-
-.intro img{
-    width: 50rem;
-    border-radius: 50%;
-   
-
+.intro img {
+  width: 25rem;
 }
 
 /*TOOLS
 ----------------------------------------------*/
 
-.tools{
-    margin: 30px 0;
-    height: 10vh;
-    margin-bottom: 100px;
-    width: 70%;
+.tools {
+  padding: 50px 0;
+
+  margin-bottom: 70px;
+  
+}
+
+.listedTools {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.listedTools > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.listedTools > div i {
+  font-size: 40px;
+}
+
+.listedTools > div img {
+  width: 40px;
 }
 
 
-
-.listedTools{
-   display: grid;
-   width: 100%;
-   grid-template-areas: 'a b c d';
-   gap: 10px;
+.tools p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.listedTools > div{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.listedTools > div i{
-    font-size: 40px;
+.tools div small {
+  color: rgba(218, 201, 201, 0.767);
+  font-size: 0.8rem;
+  transition: 0.5s;
 }
 
-.listedTools > div img{
-    width: 40px;
-}
-.toolOne{
-    grid-area: a;
-}
-.toolTwo{
-    grid-area: b;
-}
-.toolThree{
-    grid-area: c;
-}
-.toolFour{
-    grid-area: d;
-}
-
-.tools p{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-
-.tools div small{
-    color: rgba(218, 201, 201, 0.767);
-    font-size: 0.8rem;
-    transition: 0.5s;
-    
-}
-
-    /* .bootstrap{
-        position: relative;
-        
-    }
-
-    .circle{
-        height: 1.4rem;
-        background-color: white;
-        width: 20px;
-        border-radius: 30px;
-        position: absolute;
-        z-index: -1;
-        left: -39px;
-        top: -6px;
-        overflow: hidden;
-        
-    } */
 
 /*PROJECTS
 --------------------------------------*/
-.title{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-    height: 40px;
-
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  height: 40px;
 }
 
-.title a{
-    text-decoration: none;
-    background-color: rgba(107, 97, 97, 0.514);
-    color: white;
-    border: 2px solid rgba(123, 145, 204, 0.623);
-    padding: 12px;
-    border-radius: 5px; 
-    border: 3.5px solid rgb(0,0,0);
-    text-align: center;
-
-}
-
-.title a:hover{
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 
-.projects{
-    display: grid;
-    grid-template-areas: 'a b c'
-                         'd e f';
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    
-}
-.projectsOne{
-    grid-area: a;
-}
-.projectsTwo{
-    grid-area: b;
-}
-.projectThree{
-    grid-area: c;
-}
-.projectFour{
-    grid-area: d;
-}
-.projectFive{
-    grid-area: e;
-}
-.projectSix{
-    grid-area: f;
+.projects a div {
+  background-color: rgba(255, 255, 255, 0.719);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 260px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 5px;
 }
 
-.projects a div{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    height: 260px;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.4);
-    padding: 25px;
-    border-radius: 5px;
+.projects a {
+  text-decoration: none;
 }
 
-.projects a{
-    text-decoration: none;
-}
-
-.projects div p{
+.projects div p {
   margin-top: 10px;
-  font-size: 25px;
+  font-size: 1.3em;
   letter-spacing: 2px;
   color: rgba(2, 0, 0, 0.397);
-
 }
 
-.projects div small{
-    color: rgba(2, 0, 0, 0.397);
-    word-spacing: 14px;
-    margin-top: 5px;
+.projects div small {
+  color: rgba(2, 0, 0, 0.397);
+  word-spacing: 14px;
+  margin-top: 5px;
 }
 
-.projects div img{
-    width: 20rem;
-    
+.projects div img {
+  width: 100%;
+  height: 90%;
 }
 
-.seeMore{
-    display: block;
-    width: 150px;
-    margin: 40px auto;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px; 
-    text-align: center;
-    padding: 10px 10px;
-    
-    
+.seeMore {
+  display: block;
+  width: 150px;
+  margin: 40px auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px;
 }
 
-.seeMore:hover{
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+.seeMore:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
 
 /* CONTACT FORM 
 ------------------------------------------------- */
-.contactForm{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60vh;
-    gap: 20%;
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+  padding: 10vh 0;
 }
 
-.details{
-    line-height: 30px;
-    width: 40%;
-    
+.details {
+  line-height: 30px;
+  width: 40%;
 }
 
-
-.details p{
-    color: white;
+.details p {
+  color: white;
 }
 
-form{
-    display: inline-block;
-    
+form {
+  display: inline-block;
 }
 
-form input{
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 0;
-    border-bottom: 0.5px solid black;
-    width: 45%;
-    outline: 0;
-    display: inline-block;
-    background-color: transparent;
-    color: white;
-    font-size: 13.5px;
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-bottom: 0.5px solid black;
+  width: 45%;
+  outline: 0;
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-size: 13.5px;
 }
 
-textarea{
-    font-size: 13.5px;
-    width: 90%;
-    height: 120px;
-    border: 0;
-    border-bottom: 0.5px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 300;
-    outline: 0;
-    resize: none;
-    background-color: transparent;
-    color: white;
-    
+textarea {
+  font-size: 13.5px;
+  width: 90%;
+  height: 120px;
+  border: 0;
+  border-bottom: 0.5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 300;
+  outline: 0;
+  resize: none;
+  background-color: transparent;
+  color: white;
 }
 
-.contactForm button{
-    background-color: transparent;
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: 400;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px; 
-    margin-top: 10px;
-    cursor: pointer;
+.contactForm button {
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 400;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-.contactForm button:hover{
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+.contactForm button:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-
-.contactForm h2{
-    color: white;
-    text-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.6);
+.contactForm h2 {
+  color: white;
+  text-shadow: 3px 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 /*TOGGLE BUTTON 
 ----------------------------------------------------- */
-.toggle{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    right: 5%;
-    bottom: 10px;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    font-size: 20px;
-    /* background-color: rgb(30, 48, 80); */
-    background-color: yellow;
-    
-    
+.toggle {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 5%;
+  bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  font-size: 20px;
+  /* background-color: rgb(30, 48, 80); */
+  background-color: yellow;
 }
 
 /*TOGGLED WEBSITE
 ----------------------------------------------------*/
-.toggledNavBar .social{
-    color: black;
+.toggledNavBar .social {
+  color: black;
 }
 
-.toggledNavBar .social:hover{
-    color: slategray;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0, 1);
+.toggledNavBar .social:hover {
+  color: slategray;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.toggledtext{
-    color: rgba(2, 0, 0, 0.185);
+.toggledtext {
+  color: rgba(2, 0, 0, 0.185);
 }
 
-.toggledProject a div{
-    background-color: rgba(2, 0, 0, 0.185);
+.toggledProject a div {
+  background-color: rgba(2, 0, 0, 0.185);
 }
 
-
-.toggledtitle h2{
-    color: rgba(2, 0, 0, 0.637);
-} 
-
-.toggledtitle a{
-    text-decoration: none;
-    color: rgba(2, 0, 0, 0.637);
-    border-bottom: 2px solid black;
+.toggledtitle h2 {
+  color: rgba(2, 0, 0, 0.637);
 }
 
-.toggledtitle a:hover{
-    box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.3);
-    
+.toggledtitle a {
+  text-decoration: none;
+  color: rgba(2, 0, 0, 0.637);
+  border-bottom: 2px solid black;
 }
 
-.toggledIntro{
-    color: rgba(2, 0, 0, 0.637);
+.toggledtitle a:hover {
+  box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
-
-.toggledIntro h1 .myStatus{
-    color: rgb(30, 48, 80);
-}
-.toggledIntro h1 .myStatus{
-    border-bottom: 4px solid rgba(123, 145, 204, 0.623);
+.toggledIntro {
+  color: rgba(2, 0, 0, 0.637);
 }
 
-.toggledtitle a{
-    padding: 10px;
+.toggledIntro h1 .myStatus {
+  color: rgb(30, 48, 80);
+}
+.toggledIntro h1 .myStatus {
+  border-bottom: 4px solid rgba(123, 145, 204, 0.623);
 }
 
-.toggledIntro a, .toggledtitle a{
-    text-decoration: none;
-    color: white;
+.toggledtitle a {
+  padding: 10px;
+}
 
-    background-color: rgba(2, 0, 0, 0.637);
-    border-bottom: 2px solid black;
-    border: 3px solid white;
+.toggledIntro a,
+.toggledtitle a {
+  text-decoration: none;
+  color: rgba(2, 0, 0, 0.699);
+
+  /* background-color: rgba(2, 0, 0, 0.637); */
+  /* border-bottom: 1px solid black; */
+  border: 2px solid rgba(2, 0, 0, 0.699);
 }
 
 /* .toggledIntro a:hover, .toggledtitle a:hover{
@@ -477,184 +383,156 @@ textarea{
     
 } */
 
-
-
-.toggledTools h2, .toggledButton, .toggledListedTools p, .toggledContactForm button, .toggledContactForm p, .toggledContactForm h2{
-    color: rgba(2, 0, 0, 0.705);
+.toggledTools h2,
+.toggledButton,
+.toggledListedTools p,
+.toggledContactForm button,
+.toggledContactForm p,
+.toggledContactForm h2 {
+  color: rgba(2, 0, 0, 0.705);
 }
 
-.toggledContactForm input, .toggledContactForm textarea, .contactForm .details h2{
-    color: black;
-    outline: 0;
+.toggledContactForm input,
+.toggledContactForm textarea,
+.contactForm .details h2 {
+  color: black;
+  outline: 0;
 }
-
-
 
 /*RESPONSIVENESS 
 ----------------------------------------*/
-@media screen and (max-width: 950px){
-    .projects{
-        grid-template-areas: 'a b'
-                             'c d'
-                             'e f';
-    } 
+@media screen and (max-width: 950px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
 }
-@media only screen and (max-width: 858px){
-    .intro{
-        margin-top: 30px;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .intro img{
-        width: 70rem;
-        
-    }
-    .myDetails{
-        width: 100%;
-    }
-    .intro a{
-        margin-top: 20px;
-        padding: 5px 10px;
-    }
-    .intro p{
-        font-size: 12px;
-        width: 100%;
-    }
-    .intro h1{
-        font-size: 15px;
-        line-height: 30px;
-    }
-    .contactForm{
-        height: 100%;
-    }
-    /* .contactForm{
-      flex-direction: column;
-      gap: 70px;
-      
-    } */
-    .details p{
-        font-size: 10px;
-    }
-    .form{
-        width: 100%;
-    }
-    form{
-        width: 80%;
-        
-    }
-    .contactForm input{
-        display: block;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    textarea{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .contactForm button{
-        margin: 0 auto;
-    }
-    nav{
-        width: 30%;
-        font-size: 30px;
 
-    }   
-    .tools{
-        width: 100%;
-    } 
-     .tools p{
-        font-size: 4px;
-     }
-     .listedTools div i{
-        font-size: 30px;
-     }
-     .listedTools div div p{
-        font-size: 10px;
-        margin: 0;
-     }
-     .listedTools div div small{
-        font-size: 10px;
-        margin: 0;
-     }
-     .listedTools div{
-        margin: 0 5px;
-     }
-        
+@media only screen and (max-width: 858px) {
+  .intro {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    height: auto;
+    padding: 100px 0;
+  }
+  
+  .myDetails {
+    width: 100%;
+  }
+  .intro a {
+    margin-top: 20px;
+    padding: 5px 10px;
+  }
+  .intro p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .contactForm {
+    
+    display: block;
+  }
+
+  .details{
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  
+
+  .contactForm input {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form input{
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contactForm button {
+    margin: 0 auto;
+  }
+  nav {
+    width: 30%;
+    font-size: 30px;
+  }
+  .tools {
+    width: 100%;
+  }
+  .tools p {
+    font-size: 0.6rem;
+  }
+  
+ 
+ 
+  
 }
-@media screen and (max-width: 754px){
-    header{
-        margin-bottom: 30px;
-    }
-    .intro{
-        height: 60vh;
-    }
-    .intro img{
-        width: 12rem;   
-    }
-}
+
 
 @media screen and (max-width: 550px) {
-    .projects{
-        display: block;
-    }  
-    .projects a div{
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-    .projects a div p{
-        font-size: 15px;
-      }
-    .contactForm{
-        display: block;
-    }
-    .details{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .details p{
-        font-size: 15px;
-    }
-}
+  .projects {
+    display: block;
+    background-color: pink;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .projects a div {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+ 
+  .contactForm {
+    display: block;
+  }
+  .details {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .details p {
+    font-size: 15px;
+  }
+  .intro{
+    flex-direction: column;
+    padding: 5vh 0;
+  }
 
-@media screen and (max-width: 500px){
-    .intro{
-        height: 60vh;
-    }
-
-    .intro div a{
-        font-size: 5px;
-        padding: 10px;
-    }
-    .listedTools{
-        display: grid;
-        width: 100%;
-        grid-template-areas: 'a b'
-                             'c d';
-        margin: 0;
-     }
-     .listedTools div{
-        margin: 5px 0;
-     }
+  .intro div a {
+    font-size: 5px;
+    padding: 10px;
+  }
+  .listedTools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listedTools div {
+    margin: 5px 0;
+  }
 }
 
 @media screen and (max-width: 478px) {
-    .myDetails a{
-        margin-bottom: 40px;
-        font-size: 15px;
-    }
-    header a img{
-        width: 170px;
-    }
-    .tools p{
-        font-size: 1.2rem;
-        letter-spacing: 0.5px;
-    }
-    h2{
-        font-size: 20px;
-    }
-    .title a{
-        font-size: 10px;
-    }
-    
-    
+  .myDetails a {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  header a img {
+    width: 170px;
+  }
+  .tools p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .title a {
+    font-size: 10px;
+  }
 }

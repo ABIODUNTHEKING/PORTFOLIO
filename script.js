@@ -1,5 +1,6 @@
 //VARIABLES
 let toggleButton = document.getElementById('toggle')
+let person = document.getElementById('me')
 let body = document.getElementById('body')
 let logo = document.getElementById('logo')
 let navBar = document.getElementById('navBar')
@@ -27,7 +28,7 @@ function changeAppMode(mode){
         backgroundColor = "rgba(2, 0, 0, 0.699)"
         toggleButton.innerHTML = `<i class="fa-regular fa-sun"></i>`
         toggleButton.style.backgroundColor = "yellow" 
-        
+        person.setAttribute('src', "/image/hi.png")
         body.style.backgroundColor = backgroundColor
         logo.setAttribute('src', '/image/white logo.svg')
         body.style.color = "white"
@@ -46,6 +47,7 @@ function changeAppMode(mode){
         backgroundColor = 'rgba(255, 255, 255, 0.712)'
         toggleButton.innerHTML = `<i class="fa-regular fa-moon"></i>`
         toggleButton.style.backgroundColor = 'rgb(30,48,80)'
+        person.setAttribute('src', "/image/white-hi.png")
         body.style.backgroundColor = backgroundColor
         logo.setAttribute('src', '/image/black logo.svg')
         intro.classList.add("toggledIntro")
@@ -70,23 +72,7 @@ toggleButton.addEventListener("click", ()=>{
    
 })
 
-//ANIMATION ON SLIDE
-window.addEventListener("scroll", ()=>{
-    if(window.scrollY > intro.offsetHeight - intro.offsetTop){
-        htmlExperience.innerText = `1 year experience`
-        bootstrapExperience.innerText = `1 month experience`
-        cssExperience.innerText = `1 year experience`
-        jsExperience.innerText = `4 months experience`
-    }
-    else{
-        htmlExperience.innerText = ""
-        cssExperience.innerText = ""
-        bootstrapExperience.innerText = ""
-        jsExperience.innerText = ""
-    }
 
-
-})
 
 
 
